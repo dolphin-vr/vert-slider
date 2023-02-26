@@ -1,14 +1,58 @@
+:root{
+  --genoa: #F3F3F3;
+}
+
 * {box-sizing:border-box}
+
+body{
+  color: #F3F3F3;
+  background-color: #100F0F;
+  /* font-family: 'Inter', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
+}
+
+.invisible{
+  display: none;
+}
+
+.unmarked{
+  list-style: none;
+}
+
+.slider-title{
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.22;
+  /* color: #F3F3F3; */
+}
+
+.slider-text{
+  font-size: 16px;
+  line-height: 1.25;
+  /* color: #F3F3F3; */
+}
+
+.slider-btn{
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 1.2;
+  color: inherit;
+  /* background-color: #BC1A1A; */
+  background-color: rgba(188, 26, 26, 0.2);
+  padding: 10px 58px;
+}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 600px;
+  max-width: 1200px;
   position: relative;
   margin: auto;
+  margin-top: 100px;
 }
 
 /* Hide the images by default */
-.mySlides {
+.slideOdd,
+.slideEven {
   display: none;
 }
 
