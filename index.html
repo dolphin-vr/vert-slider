@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slider</title>
+    <link rel="shortcut icon" href="./images/tomato2.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -13,31 +14,41 @@
 <body>
     <section class="slideshow-container">
         <h2 class="invisible">best sales products</h2>
+        <!-- Previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)"><img src="./images/slide-up.svg" alt="slide up"></a>
+        
         <ul class="slider-frame unmarked">
             <li class="slider-item">
-                <ul class="unmarked">
-                    <li class="slideOdd fade"><img src="./images/vslide11.png" alt="Classic sauce" width="352"></li>
-                    <li class="slideOdd fade"><img src="./images/vslide21.png" alt="Classic sauce" width="352"></li>
-                    <li class="slideOdd fade"><img src="./images/vslide31.png" alt="Classic sauce" width="352"></li>                    
+                <ul class="product-img unmarked">
+                    <li class="slideOdd fade"><img src="./images/vs11.png" alt="Classic sauce"></li>
+                    <li class="slideOdd fade"><img src="./images/vs21.png" alt="Classic sauce"></li>
+                    <li class="slideOdd fade"><img src="./images/vs31.png" alt="Classic sauce"></li>                    
                 </ul>
-                <h3 class="slider-title">Classic sauce</h3>
-                <p class="slider-text">The most delicate taste of tomatoes, combined with branded spices and white wine, will make your dish incredibly tasty.</p>
-                <button type="button" class="slider-btn">Buy now</button>
+                <div class="product-review">
+                    <h3 class="slider-title">Classic sauce</h3>
+                    <p class="slider-text">The most delicate taste of tomatoes, combined with branded spices and white wine, will make your dish incredibly tasty.</p>
+                    <button type="button" class="slider-btn">Buy now</button>
+                </div>
             </li>
             <li class="slider-item">
-                <ul class="unmarked">
-                    <li class="slideEven fade"><img src="./images/vslide12.png" alt="Spicy sauce" width="352"></li>
-                    <li class="slideEven fade"><img src="./images/vslide22.png" alt="Spicy sauce" width="352"></li>
-                    <li class="slideEven fade"><img src="./images/vslide32.png" alt="Spicy sauce" width="352"></li>                    
+                <ul class="product-img unmarked">
+                    <li class="slideEven fade"><img src="./images/vs12.png" alt="Spicy sauce"></li>
+                    <li class="slideEven fade"><img src="./images/vs22.png" alt="Spicy sauce"></li>
+                    <li class="slideEven fade"><img src="./images/vs32.png" alt="Spicy sauce"></li>                    
                 </ul>
-                <h3 class="slider-title">Spicy sauce</h3>
-                <p class="slider-text">For thrill-seekers, we added hot chili pepper to our sauce, it also reveals all the tastes and aromas of the sauce well.</p>
-                <button type="button" class="slider-btn">Buy now</button>
+                <div class="product-review">
+                    <h3 class="slider-title">Spicy sauce</h3>
+                    <p class="slider-text">For thrill-seekers, we added hot chili pepper to our sauce, it also reveals all the tastes and aromas of the sauce well.</p>
+                    <button type="button" class="slider-btn">Buy now</button>
+                </div>
             </li>
         </ul>
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&xwedge;</a>
-        <a class="next" onclick="plusSlides(1)">&xvee;</a>
+        <!-- Next buttons -->
+        <a class="next" onclick="plusSlides(1)"><img src="./images/slide-down.svg" alt="slide down"></a>
+    </section>
+
+    <section>
+        <!-- <h3>footer</h3> -->
     </section>
 
     <script>
